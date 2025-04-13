@@ -79,5 +79,11 @@ SELECT column_name FROM table_name WHERE column_name >= 18;
 # Eg
 SELECT name FROM student WHERE age >= 18;
 
-# AND : BIND MULTIPLE CONDITON 
+# AND : BIND MULTIPLE CONDITON : ALL CONDITION WILL BE TRUE 
 SELECT column_name FROM table_name WHERE colunm_name1 = 'Mumbai' AND column_name2 > 18;
+
+# OR : ANY ONE CONDITION CAN BE TRUE
+SELECT column_name FROM table_name WHERE column_name1 = 'Mumbai' OR column_name2 > 18;
+
+# Eg
+SELECT name FROM student WHERE city = 'Mumbai' OR age > 18;
