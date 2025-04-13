@@ -1,15 +1,19 @@
 # CREATE DATABASE
-CREATE DATABASE database_name
+CREATE DATABASE database_name;
 
 # DELETE DATABASE
-DROP DATABASE database_name
+DROP DATABASE database_name;
 
 # USE DATABASE
-USE database_name
+USE database_name;
 
 # CREATE TABLE
 CREATE TABLE table_name(
 column_name1 DATATYPE CONSTRAINT,
 column_name2 DATATYPE CONSTRAINT,
 column_name3 DATATYPE CONSTRAINT
-)
+);
+
+# Eg
+USE collage;
+CREATE TABLE student(id INT PRIMARY KEY, name VARCHAR(50), age INT NOT NULL );
