@@ -1,6 +1,9 @@
 # CREATE DATABASE
 CREATE DATABASE database_name;
 
+# IF NOT EXISTS IN CREATE DATABASE
+CREATE DATABASE IF NOT EXISTS database_name
+
 # DELETE DATABASE
 DROP DATABASE database_name;
 
@@ -23,3 +26,5 @@ INSERT INTO table_name VALUES (column_name1_val, column_name2_val, column_name3_
 
 # Eg
 INSERT INTO student VALUEs (1, "Jayad", 23);
+
+
