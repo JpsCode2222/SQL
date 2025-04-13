@@ -105,3 +105,11 @@ SELECT * FROM table_name WHERE column_name NOT IN ('conditon1','conditon2','cond
 
 # Eg
 SELECT * FROM student WHERE city NOT IN ('Mumbai','Delhi','Pune');
+
+# LIMIT : CLAUSE USE FOR CHECK ONLY FIRST LIMIT RECORDS
+SELECT * FROM table_name LIMIT limit_number
+
+# Eg
+SELECT * FROM student LIMIT 5
+
+SELECT * FROM student WHERE city = "Mumbai" LIMIT 5
