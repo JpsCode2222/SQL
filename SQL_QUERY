@@ -17,3 +17,9 @@ column_name3 DATATYPE CONSTRAINT
 # Eg
 USE collage;
 CREATE TABLE student(id INT PRIMARY KEY, name VARCHAR(50), age INT NOT NULL );
+
+# INSERT DATA INTO TABLE
+INSERT INTO table_name VALUES (column_name1_val, column_name2_val, column_name3_val);
+
+# Eg
+INSERT INTO student VALUE(1, "Jayad", 23);
