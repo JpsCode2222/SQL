@@ -3,3 +3,6 @@ CREATE DATABASE database_name
 
 # DELETE DATABASE
 DROP DATABASE database_name
+
+# USE DATABASE
+USE database_name
