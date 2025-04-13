@@ -119,3 +119,12 @@ SELECT * FROM table_name ORDER BY CITY DESC;
 
 # Eg
 SELECT * FROM student ORDER BY DESC LIMIT 3;
+
+# AGGREGATE FUNTION : COUNT(), MAX(), MIN(), SUM(), AVG() USE WITH SELECT CLAUSE 
+
+# Eg
+SELECT COUNT(marks) FROM student;
+SELECT MAX(marks) FROM student;
+SELECT MIN(marks) FROM student;
+SELECT SUM(marks) FROM student;
+SELECT AVG(marks) FROM student;
