@@ -64,3 +64,5 @@ INSERT INTO student VALUES
 
 SELECT * FROM student;
 
+#SELECT SPECIFIC COLUMN FROM TABLE
+SELECT column_name1, column_name2 FROM table_name
