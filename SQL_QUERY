@@ -30,8 +30,15 @@ INSERT INTO table_name VALUES (column_name1_val, column_name2_val, column_name3_
 # Eg
 INSERT INTO student VALUEs (1, "Jayad", 23);
 
+# Eg : INSERT MULTIPLE RECORDS 
+INSERT INTO employee_info VALUES (4,"John",24), (5,"Robert",24);
+
 #DISPLAY ALL DATABASES
 SHOW DATABASES
 
 #DISPLAY ALL TABLES IN USE DATABASE
 SHOW TABLES
+
+
+
+pip calculation : higher price - lower price
