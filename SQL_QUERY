@@ -66,3 +66,9 @@ SELECT * FROM student;
 
 #SELECT SPECIFIC COLUMN FROM TABLE
 SELECT column_name1, column_name2 FROM table_name
+
+#SELECT Different column_named data from column_name  FROM table
+SELECT DISTINCT column_name FROM table_name;
+
+#Eg
+SELECT DISTINCT city FROM student;
