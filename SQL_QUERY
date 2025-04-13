@@ -1,2 +1,5 @@
 # CREATE DATABASE
 CREATE DATABASE database_name
+
+# DELETE DATABASE
+DROP DATABASE database_name
