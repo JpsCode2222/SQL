@@ -72,3 +72,9 @@ SELECT DISTINCT column_name FROM table_name;
 
 #Eg
 SELECT DISTINCT city FROM student;
+
+#WHERE CLAUSE : FETCH CONDITION SPECIFIC DATA
+SELECT column_name FROM table_name WHERE ages >= 18;
+
+# Eg
+SELECT name FROM student WHERE age >= 18;
