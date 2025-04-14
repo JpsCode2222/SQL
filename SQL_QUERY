@@ -401,3 +401,23 @@ SELECT * FROM student AS s LEFT JOIN course AS c ON s.id = c.id WHERE c.id IS NU
 
 # EXCLUSIVE RIGHT JOIN : GET DATA ONLY IN RIGHT TABLE OR FIRST TABLE NOT MIDDLE MATCH TABLE
 SELECT * FROM student AS s RIGHT JOIN course AS c ON s.id = c.id WHERE S.id IS NULL;
+
+# SELF JOIN : MATCH DATA IN WITH ITSELF (TABLE)
+SELECT a.name as Manager , b.name AS Employee FROM table1 as a JOIN table2 as b ON a.id = b.managerid;
+
+CREATE TABLE employee (
+id INT PRIMARY KEY,
+name VARCHAR(20),
+managerid INT
+);
+
+INSERT INTO employee
+VALUES
+(101, 'Adam', 103),
+(102, 'Bob', 104),
+(103, 'Casey', null),
+(104, 'Donald', 103);
+
+SELECT * FROM employee;
+
+SELECT a.name as Managername, b.name as Employeename FROM employee AS a JOIN employee AS b ON a.id = b.managerid;
