@@ -436,3 +436,11 @@ SELECT MAX(marks) FROM (SELCT * FROM student WHERE city = 'Mumbai') AS temp;
 
 # SUB QUERY IN SELECT 
 SELECT (SELECT marks FROM student) As marks , name FROM student;
+
+# VIEW : TEMP TABLES SNAPSHOT OF TABLE
+CREATE VIEW view_name AS SELECT column1, column2, column3 FROM table_name;
+
+# Eg
+CREATE VIEW payment_view AS SELECT id, customer_name, mode FROM payment;
+
+SELECT * FROM payment_view;
