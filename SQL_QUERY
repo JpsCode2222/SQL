@@ -299,3 +299,6 @@ SELECT * FROM student;
 SELECT * FROM course;
 
 SELECT * FROM student INNER JOIN course ON student.id = course.id;
+
+# AS : USE AS A TEMPARARY NAME OF TABLE OR COLOUMN
+SELECT name AS customer_name FROM cutomer_table
