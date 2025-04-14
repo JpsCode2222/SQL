@@ -172,4 +172,10 @@ ORDER BY city DESC;
 
 
 # SQL SAFE UPDATE : ERROR OCCUR WHEN UPDATE TO OFF BY DEFAULT IT ON 
-SET SQL_SAFE_UPDATES = 0
+SET SQL_SAFE_UPDATES = 0;
+
+# UPDATE : UPDATE DATA IN TABLE
+UPDATE table_name SET column_name = conditon WHERE column_name = condition;
+
+# Eg
+UPDATE payment SET mode = 'Net Banking' WHERE mode = 'UPI Transaction';
