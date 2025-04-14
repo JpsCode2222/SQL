@@ -156,3 +156,9 @@ INSERT INTO payment VALUES
 
 SELECT mode ,  COUNT(*)  FROM payment GROUP BY mode ;
 
+# HAVING CLAUSE: APPLY CONDITION ON GROUP BY COLUMN
+SELECT column_name FROM table_name GROUP BY column_name HAVING MAX(column_name) > 90;
+
+# Eg 
+SELECT city FROM student GROUP BY city HAVING MAX(marks) > 90;
+
