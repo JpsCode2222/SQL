@@ -262,3 +262,9 @@ ALTER TABLE table_name MODIFY column_name NEW_DATATYPE NEW_CONSTRAINT;
 
 # Eg
 ALTER TABLE table_name MODIFY id INT PRIMARY KEY AUTO INCREMENT;
+
+# TRUNCATE TABLE : to empty table
+TRUNCATE TABLE table_name;
+
+# Eg 
+TRUNCATE TABLE student;
