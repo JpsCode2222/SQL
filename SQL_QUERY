@@ -128,3 +128,9 @@ SELECT MAX(marks) FROM student;
 SELECT MIN(marks) FROM student;
 SELECT SUM(marks) FROM student;
 SELECT AVG(marks) FROM student;
+
+# GROUP BY : GROUP BY SPECIFIC ROWS : USE WITH AGGRIGATE FUNCTION 
+SELECT column_name FROM table_name GROUP BY column_name;
+
+# Eg : GROUP BY TWO COLUMN NAMES city, makrs
+SELECT city , AVG(marks) FROM student GROUP BY city, marks;
