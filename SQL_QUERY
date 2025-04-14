@@ -333,3 +333,34 @@ SELECT * FROM student;
 SELECT * FROM course;
 
 SELECT * FROM student AS s LEFT JOIN course AS c ON s.id = c.id;
+
+# RIGHT JOIN : GET ONLY RIGHT OR SECOND TABLE DATA MATCH WITH CONDITION
+SELECT * FROM table1 RIGHT JOIN table2 ON table1.id = table2.id 
+
+# Eg
+CREATE TABLE student(
+id INT PRIMARY KEY,
+name VARCHAR(20)
+);
+
+CREATE TABLE course(
+id INT PRIMARY KEY,
+name VARCHAR(20)
+);
+
+INSERT INTO student
+VALUES
+(101, 'Robin'),
+(102, 'Jack'),
+(104, 'Mark');
+
+INSERT INTO course
+VALUES
+(102, 'English'),
+(104, 'IT');
+
+
+SELECT * FROM student;
+SELECT * FROM course;
+
+SELECT * FROM student AS s RIGHT JOIN course AS c ON s.id = c.id;
