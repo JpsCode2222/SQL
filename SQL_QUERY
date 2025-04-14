@@ -134,3 +134,25 @@ SELECT column_name FROM table_name GROUP BY column_name;
 
 # Eg : GROUP BY TWO COLUMN NAMES city, makrs
 SELECT city , AVG(marks) FROM student GROUP BY city, marks ORDER BY city DESC;
+
+# Eg : FIND TOTAL PAYMENT ACCORDING TO EACH PAYMENT METHOD
+CREATE DATABASE customer;
+
+USE collage;
+
+CREATE TABLE payment(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+mode VARCHAR(20),
+city VARCHAR(20)
+);
+
+INSERT INTO payment VALUES 
+(1, 'Robert', 'Credit Card', 'Pune'),
+(2, 'John', 'Debit Card', 'Nagar'),
+(3, 'Roger', 'Net Banking', 'Nepal'),
+(4, 'Tonny', 'Debit Card', 'Bhutan'),
+(5, 'Cassey', 'Credit Card', 'Pune');
+
+SELECT mode ,  COUNT(*)  FROM payment GROUP BY mode ;
+
