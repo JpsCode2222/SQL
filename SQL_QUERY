@@ -133,4 +133,4 @@ SELECT AVG(marks) FROM student;
 SELECT column_name FROM table_name GROUP BY column_name;
 
 # Eg : GROUP BY TWO COLUMN NAMES city, makrs
-SELECT city , AVG(marks) FROM student GROUP BY city, marks;
+SELECT city , AVG(marks) FROM student GROUP BY city, marks ORDER BY city DESC;
