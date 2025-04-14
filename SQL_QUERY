@@ -179,3 +179,9 @@ UPDATE table_name SET column_name = conditon WHERE column_name = condition;
 
 # Eg
 UPDATE payment SET mode = 'Net Banking' WHERE mode = 'UPI Transaction';
+
+# DELETE : REMOVE DATA IN TABLES
+DELETE FROM table_name WHERE column_name = conditon;
+
+# Eg
+DELETE FROM payment WHERE payment_id = 100339393499;
