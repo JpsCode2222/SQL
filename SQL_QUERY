@@ -364,3 +364,34 @@ SELECT * FROM student;
 SELECT * FROM course;
 
 SELECT * FROM student AS s RIGHT JOIN course AS c ON s.id = c.id;
+
+# FULL JOIN : UNION OF LEFT JOIN AND RIGHT JOIN CAN BE FULL JOIN OR FULL OUTER JOIN IN MYSQL
+SELECT * FROM table1 LEFT JOIN table2 ON table1.id = table2.id UNION SELECT * FROM table1 RIGHT JOIN table2 ON table1.id = table2.id
+
+# Eg
+CREATE TABLE student(
+id INT PRIMARY KEY,
+name VARCHAR(20)
+);
+
+CREATE TABLE course(
+id INT PRIMARY KEY,
+name VARCHAR(20)
+);
+
+INSERT INTO student
+VALUES
+(101, 'Robin'),
+(102, 'Jack'),
+(104, 'Mark');
+
+INSERT INTO course
+VALUES
+(102, 'English'),
+(104, 'IT');
+
+
+SELECT * FROM student;
+SELECT * FROM course;
+
+SELECT * FROM student AS s LEFT JOIN course AS c ON s.id = c.id UNION SELECT * FROM student AS s RIGHT JOIN course AS c ON s.id = c.id;
