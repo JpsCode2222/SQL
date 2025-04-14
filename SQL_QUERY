@@ -435,4 +435,4 @@ SELECT id , name FROM student WHERE id IN (SELECT id FROM student WHERE id % 2 =
 SELECT MAX(marks) FROM (SELCT * FROM student WHERE city = 'Mumbai') AS temp;
 
 # SUB QUERY IN SELECT 
-SELECT (SELECT MAX(marks) FROM student) As marks , name FROM student;
+SELECT (SELECT marks FROM student) As marks , name FROM student;
