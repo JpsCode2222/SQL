@@ -252,7 +252,7 @@ ALTER TABLE table_name RENAME TO rename_table_name;
 ALTER TABLE dept RENAME TO department;
 
 # ALTER : CHANGE COLUMN NAME OF DATATYPE
-ALTER TABLE table_name CHANGE old_column_name new_column_name DATATYPE CONSTRAINT;
+ALTER TABLE table_name CHANGE old_column_name new_column_name new_DATATYPE new_CONSTRAINT;
 
 # Eg
 ALTER TABLE dept CHANGE name dept_name VARCHAR(20);
