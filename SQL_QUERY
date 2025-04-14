@@ -421,3 +421,6 @@ VALUES
 SELECT * FROM employee;
 
 SELECT a.name as Managername, b.name as Employeename FROM employee AS a JOIN employee AS b ON a.id = b.managerid;
+
+# UNION ALL : GETTING DUPLICAT ROWS FROM TABLE 
+SELECT name FROM employee UNION ALL SELECT name FROM employee
