@@ -234,7 +234,7 @@ SELECT * FROM dept;
 SELECT * FROM teacher;
 
 # ALTER : CHANGE IN COLUMNS 
-ALTER TABLE table_name ADD COLUMN column_name DATATYPE CONTRAINTS;
+ALTER TABLE table_name ADD COLUMN column_name DATATYPE CONSTRAINT;
 
 # Eg
 ALTER TABLE dept ADD COLUMN age INT NOT NULL;
@@ -250,3 +250,9 @@ ALTER TABLE table_name RENAME TO rename_table_name;
 
 # Eg
 ALTER TABLE dept RENAME TO department;
+
+# ALTER : CHANGE COLUMN NAME OF DATATYPE
+ALTER TABLE table_name CHANGE old_column_name new_column_name DATATYPE CONSTRAINT;
+
+# Eg
+ALTER TABLE dept CHANGE name dept_name VARCHAR(20);
