@@ -162,3 +162,10 @@ SELECT column_name FROM table_name GROUP BY column_name HAVING MAX(column_name) 
 # Eg 
 SELECT city FROM student GROUP BY city HAVING MAX(marks) > 90;
 
+# ORDER OF QUERY
+SELECT city , name 
+FROM payment 
+WHERE mode = 'Credit Card'
+GROUP BY city , name
+HAVING city = 'Pune'
+ORDER BY city DESC;
