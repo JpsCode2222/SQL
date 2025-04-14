@@ -185,3 +185,16 @@ DELETE FROM table_name WHERE column_name = conditon;
 
 # Eg
 DELETE FROM payment WHERE payment_id = 100339393499;
+
+# FOREIGN KEY : LINK DATA BETWEEN TWO TABLES
+CREATE TABLE dept(
+    id INT PRIMARY KEY,
+    name VARCHAR(20)
+);
+
+CREATE TABLE teacher(
+    id INT PRIMARY KEY,
+    name VARCHAR(20),
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERNCES detp(id)
+)
