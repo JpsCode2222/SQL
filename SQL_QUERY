@@ -244,3 +244,9 @@ ALTER TABLE table_name DROP COLUMN column_name;
 
 # Eg
 ALTER TABLE dept DROP COLUMN age;
+
+# ALTER : RENAME TABLE NAME USING RENAME TO 
+ALTER TABLE table_name RENAME TO rename_table_name;
+
+# Eg
+ALTER TABLE dept RENAME TO department;
