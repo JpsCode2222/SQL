@@ -424,3 +424,15 @@ SELECT a.name as Managername, b.name as Employeename FROM employee AS a JOIN emp
 
 # UNION ALL : GETTING DUPLICAT ROWS FROM TABLE 
 SELECT name FROM employee UNION ALL SELECT name FROM employee
+
+# SUB QUERIES : NESTED QUERIES MOST USE AFTER SELECT , FROM , WHERE 
+#Eg
+# SUB QUERY IN WHERE
+SELECT name FROM student WHERE marks > (SELECT AVG(marks) FROM student);
+SELECT id , name FROM student WHERE id IN (SELECT id FROM student WHERE id % 2 = 0);
+
+# SUB QUERY IN FROM 
+SELECT MAX(marks) FROM (SELCT * FROM student WHERE city = 'Mumbai') AS temp;
+
+# SUB QUERY IN SELECT 
+SELECT (SELECT MAX(marks) FROM student) As marks , name FROM student;
